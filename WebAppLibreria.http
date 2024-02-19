@@ -1,0 +1,13 @@
+@WebAppLibreria_HostAddress = http://localhost:5082
+
+GET {{WebAppLibreria_HostAddress}}/book/
+Accept: application/json
+
+###
+
+GET {{WebAppLibreria_HostAddress}}/bookshelf/
+Accept: application/json
+
+###
+
+
