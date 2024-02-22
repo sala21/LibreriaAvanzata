@@ -1,82 +1,64 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
+    margin: 50px 50px 50px 50px;
+    padding: 0;
+    background-color: beige;
 }
 
-.centrato {
-    width: 80%;
-    margin:  auto;
+.content {
+    height: 1000px;
+    padding-bottom: 100px;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px ;
+    padding: 10px 10px 1px 10px;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+nav {
+    margin: 10px 50px 50px 50px;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+    nav a {
+        color: black; 
+        text-decoration: none; 
+        margin: 0 20px; 
+        transition: color 0.3s, text-decoration 0.3s, transform 0.3s; 
+    }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-   
-}
+        nav a:hover {
+            color: blue;
+            transform: scale(1.1);
+            display: inline-block;
+        }
 
-nav ul li a:hover {
-    color: yellow;
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-}
-
-
-
-#Contatti {
-    list-style-type: none;
-    background-color: black; 
-    color: white;
-    position: absolute;
-    bottom: 0px;
-    padding: 13px;
-    font-size: 13px;
-    box-sizing: border-box;
+#tabella {
     width: 100%;
-    
-}
-.centrato{
-
+    border-collapse: collapse;
+    background-color: #AAA;
 }
 
+    #tabella th {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }   
 
-    
+footer {
+    bottom: 0;
+    left: 0;  
+    background-color: #CCC;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+
 
 
 
