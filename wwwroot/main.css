@@ -56,14 +56,54 @@ nav {
     width: 100%;
     border-collapse: collapse;
     background-color: #AAA;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
     #tabella th {
-        border: 1px solid black;
+        border: 1px outset white;
         padding: 10px;
         text-align: center;
         color: white;
     }
+
+
+form {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    label {
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 50%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    button {
+        background-color: #333;
+        border: none;
+        color: white;
+        padding: 10px 27px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 2px 1px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+        button:hover {
+            background-color: blue; 
+        }
+
 
 footer {
     border-bottom-left-radius: 10px;
@@ -75,41 +115,8 @@ footer {
     text-align: center;
     z-index: 1000;
 }
+
     footer p {
         margin: 10px;
         display: inline-block;
     }
-
-form {
-    margin: 0 auto;
-    width: 50%; 
-    text-align: center;
-}
-        
-
-
-button {
-    background-color: #333;
-    border: none;
-    color: white;
-    padding: 10px 27px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 1px;
-    cursor: pointer;
-    border-radius: 10px;
-    margin-left: 30px;
-}
-    /* e quando il cursore ci passa sopra */
-    button:hover {
-        background-color: blue; 
-    }
-
-input[type="number"],
-input[type="text"] {
-    border-radius: 10px; 
-    padding: 5px; 
-    margin-bottom: 10px; 
-}
