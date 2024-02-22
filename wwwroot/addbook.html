@@ -1,32 +1,36 @@
 <!DOCTYPE html>
+<html>
+    <title>Aggiungi un libro</title>
+    <link rel="stylesheet" href="main.css">
 
-    <title>Aggiungere</title>
-    <link rel="stylesheet" href="esempio.css">
+
+<body>
+
+    <div class="content">
+            <header>
+                <h1>Aggiungi un libro</h1>
+            </header>
+
+            <nav><a href="index.html">Torna alla homepage</a></nav>
+
     
-    <html>
-    <body>
-        <center>
-            <div class="centrato">
-                <h1>Aggiungi Libro</h1>
-                
-                
-                    <form action="addbook.html">
-                        <label for="prova">ID Scaffale  </label>
-                        <input type="number" id="prova" name="name" value=""><br>
-                        <br><label for="prova1">Titolo  </label>
-                        <input type="text" id="prova1" name="name" value=""><br>
-                        <br><label for="prova2">Genere  </label>
-                        <input type="text" id="prova2" name="name" value=""><br>
-                        <br><button onclick="addBook()">Aggiungi</button>
-                        </form>
-                
-            </div>
-        </center>
+            
+                <form action="addbook.html">
+                    <label for="shelf">Scaffale  </label>
+                    <input type="number" id="shelf" name="name" value=""><br>
+                    <br><label for="title">Titolo  </label>
+                    <input type="text" id="title" name="name" value=""><br>
+                    <br><label for="idgenre">Genere  </label>
+                    <input type="text" id="idgenre" name="name" value=""><br>
+                    <br><button onclick="addBook()">Conferma</button>
+                </form>
+            
+              
+            
 
-        <div style="text-align: left; position: fixed; bottom: 0;  padding: 10px;">
-            <a href="index.html">Torna alla homepage</a>
-        </div>
-        <script src="libreria.js"></script>
+    </div>
+  
+    <script src="libreria.js"></script>
 
-    </body>
-    </html>
+</body>
+</html>

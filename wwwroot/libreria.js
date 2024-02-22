@@ -15,11 +15,8 @@ let aggiungiatabella = (books) => {
     });
 }
 let template = (book) => {
-    return `<td>${book.title}</td><td>${book.genre}</td><td>${book.library}</td>`
+    return `<td>${book.Title}</td><td>${book.IdGen}</td><td>${book.IdShelf}</td>`
 }
-
-
-
 
 
 

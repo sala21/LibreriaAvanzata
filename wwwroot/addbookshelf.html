@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
+<title>Aggiungi uno scaffale</title>
+<link rel="stylesheet" href="main.css">
+
 
 <body>
-    <center>
-        
-            <h1>Aggiungi Scaffale</h1><br>
-            
-            
-            
-            
-            <table id="risultati">
-                <form action="index.html">
-                    <label for="prova">ID Nuovo Scaffale  </label>
-                    <input type="number" id="prova" name="name" value=""><br>
-                    <br><button onclick="addBookShelf()">Aggiungi</button>
-                </form>
-</table>
-        
-    </center>
+
+    <div class="content">
+        <header>
+            <h1>Aggiungi uno scaffale</h1>
+        </header>
+
+        <nav><a href="index.html">Torna alla homepage</a></nav>
+
+
+
+        <form action="addbook.html">
+            <br><label for="code">Codice  </label>
+            <input type="text" id="code" name="name" value=""><br>
+            <br><button onclick="addBookshelf()">Conferma</button>
+        </form>
+
+
+
+
+    </div>
 
     <script src="libreria.js"></script>
-   
 
-    
 </body>
 </html>
