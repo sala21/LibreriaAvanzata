@@ -3,6 +3,8 @@ body {
     margin: 50px 50px 50px 50px;
     padding: 0;
     background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -11,27 +13,41 @@ body {
 }
 
 header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: #333;
     color: #fff;
     padding: 10px 10px 1px 10px;
     text-align: center;
 }
+    header a {
+        color: white;
+        text-decoration: none;
+        margin: 0 50px;
+        transition: color 0.3s, text-decoration 0.3s, transform 0.3s;
+    }
+        header a:hover {
+            color: beige;
+            transform: scale(1.1);
+            display: inline-block;
+        }
+
 
 nav {
-    margin: 10px 50px 50px 50px;
+    margin: 10px 0px 50px 0px;
     text-align: center;
+    background-color: #333;
     font-family: "Dosis", sans-serif;
+    padding: 10px;
 }
-
     nav a {
-        color: black; 
+        color: white; 
         text-decoration: none; 
-        margin: 0 20px; 
+        margin: 0 50px;
         transition: color 0.3s, text-decoration 0.3s, transform 0.3s; 
     }
-
         nav a:hover {
-            color: blue;
+            color: beige;
             transform: scale(1.1);
             display: inline-block;
         }
@@ -50,6 +66,8 @@ nav {
     }
 
 footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     bottom: 0;
     left: 0;
     background-color: #CCC;
@@ -63,10 +81,11 @@ footer {
     }
 
 form {
-    margin-left: 500px;
-    margin-right: 0;
-    width: 0%;
+    margin: 0 auto;
+    width: 50%; 
+    text-align: center;
 }
+        
 
 
 button {
