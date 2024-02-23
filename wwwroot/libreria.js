@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => { GetData(); });
 
 
 let GetData = () => {
-fetch('/Book')
-    .then(response => response.json())
-    .then(json => aggiungiatabella(json));
+    fetch('/Book')
+        .then(response => response.json())
+        .then(json => aggiungiatabella(json));
 }
 
 let aggiungiatabella = (books) => {
@@ -15,10 +15,8 @@ let aggiungiatabella = (books) => {
     });
 }
 let template = (book) => {
-    return `<td>${book.Title}</td><td>${book.IdGen}</td><td>${book.IdShelf}</td>`
+    return `<td>${book.title}</td><td>${book.idGen}</td><td>${book.idShelf}</td><td>${book.isOut}</td>`
 }
-
-
 
 
 
